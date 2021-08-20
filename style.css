@@ -65,7 +65,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 65px;
+  font-size: 50px;
   
   color: #fff;
 }
@@ -182,6 +182,44 @@ header nav ul{
   text-align: center;
 }
 
+
+/* -------  Group and Items------- */
+.txt-about{
+  /* stretch each line to make it have equal width*/
+  text-align: justify;
+}
+.group{/*change the flex-direction to make items display as a horizontal row*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.img{
+  /*remove the left-padding*/
+  padding-left:0px;
+ 
+}
+.img-about{
+  width:24%;
+}
+
+.item {
+  /*remove the left padding*/
+  padding-left:0px;
+  padding-right:5px;
+}
+.item-right {
+  /*remove the right padding of the items on the right side*/
+  padding-right:0px;
+  padding-left:5px;
+}
+}
+
+@Media all and (min-width:1000px){
+  form div {
+    /*change the flex-direction from "column" to "row" to make items display as a horizontal row in a large browser*/
+    flex-direction: row;
+  }
+  
 /* -------  Search Form for Desktop ------- */
 form {
   border: 2px solid #ff385c;
@@ -214,41 +252,4 @@ form button {
   padding: 0;
 }
 
-/* -------  Group and Items------- */
-.txt-about{
-  /* stretch each line to make it have equal width*/
-  text-align: justify;
-}
-.group{/*change the flex-direction to make items display as a horizontal row*/
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.img{
-  /*remove the left-padding*/
-  padding-left:0px;
- 
-  
-}
-.img-about{
-  width:24%;
-}
-
-.item {
-  /*remove the left padding*/
-  padding-left:0px;
-  padding-right:5px;
-}
-.item-right {
-  /*remove the right padding of the items on the right side*/
-  padding-right:0px;
-  padding-left:5px;
-}
-}
-
-@Media all and (min-width:1000px){
-  form div {
-    /*change the flex-direction from "column" to "row" to make items display as a horizontal row in a large browser*/
-    flex-direction: row;
-  }
 }
